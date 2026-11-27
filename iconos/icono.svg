@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Icono de Ludia (dibujo propio): una L blanca y un sol amarillo sobre el azul de la app -->
+  <rect width="512" height="512" fill="#4A78A8"/>
+  <circle cx="330" cy="190" r="58" fill="#FDD835"/>
+  <rect x="150" y="130" width="72" height="250" rx="28" fill="#FFFFFF"/>
+  <rect x="150" y="310" width="210" height="70" rx="28" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,1 @@
+import{b as i}from"./chunk-TLADTO4W.js";import{a as t}from"./chunk-TEJQZWQT.js";var s=t({"actividades-del-dia":"Actividades del d\xEDa","accion-objeto":"Acci\xF3n y objeto",memoria:"Memoria",intrusos:"Intrusos",vocales:"Vocales",silabas:"S\xEDlabas"},Object.fromEntries(i.map(o=>[o.id,o.titulo]))),r=o=>s[o]??o;export{s as a,r as b};

@@ -1,0 +1,20 @@
+# Mantiene despierta la API de Ludia en Render (plan gratuito: se duerme tras 15 minutos sin uso
+# y tarda unos 30 segundos en arrancar). Llama a /api/salud cada 5 minutos (GitHub se salta a menudo ejecuciones programadas) en horario de centro
+# (lunes a viernes, de 7:00 a 20:00 hora española aprox.). GitHub Actions es gratis en repositorios públicos.
+# Este fichero se copia al repositorio agomezve/ludia-web desde scripts/publicar-web.sh.
+name: Despertar la API
+
+on:
+  schedule:
+    - cron: '*/5 5-19 * * 1-5'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  despertar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Llamar a /api/salud
+        run: curl -fsS --retry 3 --retry-delay 20 --max-time 90 https://ludia-api.onrender.com/api/salud
